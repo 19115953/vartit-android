@@ -3,6 +3,16 @@
 Vain uusimmat versiot julkaistaan tässä repossa; vanhemmat on listattu
 historiaksi.
 
+## 0.6.1 – 2026-11-10
+
+- Kun hinta on niin korkea, että palkki ulottuisi kellotaulun yli, kello
+  pienenee juuri sen verran, että palkki mahtuu kokonaan näkyviin (enintään
+  noin 17 %). Tavallisina päivinä kello on yhtä iso kuin ennenkin.
+
+*When a price is high enough that its bar would reach past the dial, the clock
+shrinks just enough to show the whole bar (by at most about 17%). On ordinary
+days the clock is as big as before.*
+
 ## 0.6.0 – 2026-11-10
 
 - **Isompi kello:** kellotaulu täyttää nyt koko tilansa (noin 13 % isompi
