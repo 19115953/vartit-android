@@ -3,6 +3,17 @@
 Vain uusimmat versiot julkaistaan tässä repossa; vanhemmat on listattu
 historiaksi.
 
+## 0.5.2 – 2026-11-10
+
+- Korkean widgetin hintarivin uloimmat kulmat eivät enää pyöristy muita
+  enemmän (esim. Samsungilla). Puhelin pyöristää widgetin kulmat, joten
+  widgetin sisältö on nyt hieman irti reunoista, sen verran kuin puhelimen
+  kulma vaatii.
+
+*The outermost corners of the tall widget's price row no longer get rounder than
+the rest (e.g. on Samsung): the content now keeps just enough distance from the
+launcher's rounded widget corners.*
+
 ## 0.5.1 – 2026-11-10
 
 - Nykyisen vartin hintaa ei enää kirjoiteta palkkiin, koska kellon osoitin
