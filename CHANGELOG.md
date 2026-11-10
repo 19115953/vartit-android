@@ -3,6 +3,17 @@
 Vain uusimmat versiot julkaistaan tässä repossa; vanhemmat on listattu
 historiaksi.
 
+## 0.5.0 – 2026-11-10
+
+- **Kalliit päivät:** erittäin kalliiden varttien (vähintään 30 snt/kWh) hinnat ovat
+  palkeissa isommalla tekstillä ja kauempana keskeltä, joten niitä on helpompi lukea.
+- **Hintarenkaat** (5, 10, 15 ja 20 snt) näkyvät nyt myös korkeiden palkkien
+  kohdalla: palkkien välisissä valkoisissa raoissa on pieni tumma merkki.
+
+*Expensive days: the price printed on very expensive (30 c or more) bars is bigger and
+further out; the 5–20 c price rings now show through the gaps between tall
+bars.*
+
 ## 0.4.0 – 2026-10-05
 
 - **Korkea widget:** kun widgetin venyttää selvästi leveyttään korkeammaksi,
