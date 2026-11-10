@@ -3,6 +3,14 @@
 Vain uusimmat versiot julkaistaan tässä repossa; vanhemmat on listattu
 historiaksi.
 
+## 0.5.1 – 2026-11-10
+
+- Nykyisen vartin hintaa ei enää kirjoiteta palkkiin, koska kellon osoitin
+  peitti sen. Hinta näkyy edelleen *Nyt*-ruudussa tai kellon keskellä.
+
+*The current quarter's price is no longer printed on its bar, where the hour
+hand covered it; it's still in the Now chip or the clock's centre.*
+
 ## 0.5.0 – 2026-11-10
 
 - **Kalliit päivät:** erittäin kalliiden varttien (vähintään 30 snt/kWh) hinnat ovat
