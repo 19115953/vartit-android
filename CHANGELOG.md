@@ -3,6 +3,16 @@
 Vain uusimmat versiot julkaistaan tässä repossa; vanhemmat on listattu
 historiaksi.
 
+## 0.6.2 – 2026-11-10
+
+- Erittäin kalliiden varttien palkeissa hinta näkyy kokonaisina sentteinä
+  (esim. 43 eikä 42,82), kuten kellon hintarenkaissa. Tarkka hinta näkyy
+  edelleen hintarivissä ja kellon keskellä.
+
+*Prices printed on very expensive bars are now whole cents (e.g. 43 instead of
+42,82), like the price rings. The exact price is still in the price row and the
+clock's centre.*
+
 ## 0.6.1 – 2026-11-10
 
 - Kun hinta on niin korkea, että palkki ulottuisi kellotaulun yli, kello
