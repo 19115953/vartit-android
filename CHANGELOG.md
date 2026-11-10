@@ -3,6 +3,14 @@
 Vain uusimmat versiot julkaistaan tässä repossa; vanhemmat on listattu
 historiaksi.
 
+## 0.6.3 – 2026-11-10
+
+- Erittäin kalliiden varttien palkkien hinnat ovat hieman kauempana kellon
+  keskeltä, joten ne erottuvat toisistaan paremmin.
+
+*Prices on very expensive bars sit a little further out from the centre, so
+they're easier to tell apart.*
+
 ## 0.6.2 – 2026-11-10
 
 - Erittäin kalliiden varttien palkeissa hinta näkyy kokonaisina sentteinä
