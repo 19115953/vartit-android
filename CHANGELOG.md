@@ -3,6 +3,18 @@
 Vain uusimmat versiot julkaistaan tässä repossa; vanhemmat on listattu
 historiaksi.
 
+## 0.7.0 – 2026-11-10
+
+- **Hintasuunta kellon keskellä** (korkea widget): nuoli kertoo, nouseeko (↑)
+  vai laskeeko (↓) hinta seuraavan tunnin aikana nykyiseen verrattuna, tai
+  pysyykö se suunnilleen samana (–). Pallon väri on seuraavan tunnin
+  keskihinnan väri. Aiempi neljän värin "kuluvan tunnin" kiekko poistui.
+
+*Price trend in the clock's centre (tall widget): an arrow shows whether prices
+rise (↑) or fall (↓) over the next hour compared with now, or stay about the
+same (–); the disc has the next hour's average price colour. Replaces the
+four-colour "current hour" disc.*
+
 ## 0.6.3 – 2026-11-10
 
 - Erittäin kalliiden varttien palkkien hinnat ovat hieman kauempana kellon

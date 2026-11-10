@@ -41,7 +41,10 @@ Vaatii Android 8.0:n tai uudemman.
 Widgetin kokoa voi muuttaa: paina sitä pitkään ja vedä reunoista.
 
 - **Korkea** (selvästi korkeampi kuin leveä): kellon yläpuolelle tulee rivi,
-  jossa nykyinen vartti (*Nyt*) ja kolme seuraavaa varttia isolla.
+  jossa nykyinen vartti (*Nyt*) ja kolme seuraavaa varttia isolla. Kellon
+  keskellä on nuoli: **↑** hinta nousee seuraavan tunnin aikana, **↓** laskee,
+  **–** pysyy suunnilleen samana. Pallon väri on seuraavan tunnin keskihinnan
+  väri.
 - **Matala tai neliö**: pelkkä kello, nykyinen hinta kellon keskellä.
 
 ### Kellon lukeminen
@@ -118,8 +121,10 @@ in a separate private repository.
   asked (and *Install anyway* if Play Protect warns), then open the app and tap
   **Add to home screen**.
 - **Sizes:** resize the widget taller than wide to get a row with the current
-  and next three quarter-hour prices above the clock; otherwise the current
-  price sits in the clock's centre.
+  and next three quarter-hour prices above the clock, and an arrow in the
+  clock's centre: ↑ prices rise over the next hour, ↓ they fall, – about the
+  same (the disc has the next hour's average price colour). Otherwise the
+  current price sits in the clock's centre.
 - **Colours:** blue = negative, green = cheap (0–2 c), orange = medium
   (2–10 c), red = expensive (10 c or more). Hatching = not yet published.
 - **Not updating?** App → *Open app info* → *Battery* → *Unrestricted*.
