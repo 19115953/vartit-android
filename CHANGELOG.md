@@ -3,6 +3,16 @@
 Vain uusimmat versiot julkaistaan tässä repossa; vanhemmat on listattu
 historiaksi.
 
+## 0.5.3 – 2026-11-10
+
+- Korjaus versioon 0.5.2: hintarivin uloimmat yläkulmat eivät enää leikkaudu
+  (esim. Samsungilla). Puhelin pyöristi widgetin sisällön kulmia widgetin
+  oman reunan sijaan; nyt pyöristys osuu widgetin reunaan.
+
+*Fix for 0.5.2: the price row's outermost top corners no longer get cut (e.g.
+on Samsung). The launcher was rounding the corners of the widget's content
+instead of the widget's own frame; now the rounding lands on the frame.*
+
 ## 0.5.2 – 2026-11-10
 
 - Korkean widgetin hintarivin uloimmat kulmat eivät enää pyöristy muita
