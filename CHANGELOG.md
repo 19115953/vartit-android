@@ -3,6 +3,18 @@
 Vain uusimmat versiot julkaistaan tässä repossa; vanhemmat on listattu
 historiaksi.
 
+## 0.6.0 – 2026-11-10
+
+- **Isompi kello:** kellotaulu täyttää nyt koko tilansa (noin 13 % isompi
+  samassa widgetin koossa). Korkeassa widgetissä kello on yhtä leveä kuin
+  hintarivi sen yläpuolella.
+- Erittäin kalliiden varttien palkit päättyvät siististi kellotaulun reunaan
+  eivätkä enää jatku sen yli.
+
+*Bigger clock: the dial now fills its space (about 13% bigger at the same widget
+size; as wide as the price row in the tall layout). Bars of very expensive
+quarters end neatly at the dial's rim.*
+
 ## 0.5.3 – 2026-11-10
 
 - Korjaus versioon 0.5.2: hintarivin uloimmat yläkulmat eivät enää leikkaudu
