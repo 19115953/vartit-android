@@ -3,6 +3,12 @@
 Vain uusimmat versiot julkaistaan tässä repossa; vanhemmat on listattu
 historiaksi.
 
+## 0.7.1 – 2026-11-11
+
+- Hintarivin *Nyt*-teksti ja kellonajat ovat isommalla fontilla.
+
+*Bigger "Now" and time labels in the price row.*
+
 ## 0.7.0 – 2026-11-10
 
 - **Hintasuunta kellon keskellä** (korkea widget): nuoli kertoo, nouseeko (↑)
