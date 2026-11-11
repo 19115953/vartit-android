@@ -3,6 +3,19 @@
 Vain uusimmat versiot julkaistaan tässä repossa; vanhemmat on listattu
 historiaksi.
 
+## 0.11.0 – 2026-11-11
+
+- **Siksak-nuoli:** kellon keskellä on nyt seuraavan tunnin hintapolku –
+  yksi osa jokaista varttia kohden, joka nousee tai laskee edelliseen
+  verrattuna, sitä jyrkemmin, mitä suurempi muutos. Poikkiviivat poistuivat.
+  Aiempi yksittäinen nuoli saattoi näyttää ylöspäin, vaikka seuraava hinta
+  oli halvempi (esim. 21.30: nyt alas, ylös, alas, alas).
+
+*Zigzag arrow: the clock's centre now shows the coming hour's price path, one
+leg per quarter rising or falling against the previous one, steeper for a
+bigger change. The cross-ticks are gone. The old single arrow could point up
+while the next price was cheaper.*
+
 ## 0.10.0 – 2026-11-11
 
 - **Nuolen kaksi lukemaa erotettiin:** poikkiviivat kertovat edelleen
