@@ -3,6 +3,19 @@
 Vain uusimmat versiot julkaistaan tässä repossa; vanhemmat on listattu
 historiaksi.
 
+## 0.8.0 – 2026-11-11
+
+- **Hintasuunnan voimakkuus:** kellon keskellä oleva nuoli näyttää nyt
+  tuulimerkin tapaan myös, kuinka paljon hinta muuttuu seuraavan tunnin
+  aikana: piste = suunnilleen sama, pelkkä nuoli = alle 2 snt, sitten yksi
+  väkänen lisää rajoilla 2, 10 ja 30 snt (samat rajat kuin hintaluokilla ja
+  vilkkumisella).
+
+*Strength of the price trend: the centre arrow now shows, like a wind barb, how
+much the price changes over the next hour: a dot = about the same, a plain
+arrow = under 2 c, then one more tick at 2, 10 and 30 c (the same limits as the
+price classes and the blinking).*
+
 ## 0.7.1 – 2026-11-11
 
 - Hintarivin *Nyt*-teksti ja kellonajat ovat isommalla fontilla.
