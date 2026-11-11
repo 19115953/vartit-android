@@ -3,6 +3,20 @@
 Vain uusimmat versiot julkaistaan tässä repossa; vanhemmat on listattu
 historiaksi.
 
+## 0.9.0 – 2026-11-11
+
+- **Nuoli kuin pala hintakäyrää:** kellon keskellä oleva nuoli osoittaa nyt
+  aina oikealle (aika) ja kallistuu ylös tai alas sen mukaan, nouseeko vai
+  laskeeko hinta seuraavan tunnin aikana. Mitä suurempi muutos, sitä
+  jyrkempi kallistus. Poikkiviivat nuolen hännässä kertovat muutoksen koon
+  kuten ennenkin (2, 10 ja 30 snt). Tasainen hinta näkyy vaakasuorana
+  nuolena pisteen sijaan.
+
+*The centre arrow is now like a piece of the price curve: it always points right
+(time) and tilts up or down with the price, steeper for bigger changes;
+cross-ticks at its tail still give the size (2, 10, 30 c). A steady price shows
+as a level arrow instead of a dot.*
+
 ## 0.8.0 – 2026-11-11
 
 - **Hintasuunnan voimakkuus:** kellon keskellä oleva nuoli näyttää nyt
