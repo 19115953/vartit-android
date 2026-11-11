@@ -3,6 +3,14 @@
 Vain uusimmat versiot julkaistaan tässä repossa; vanhemmat on listattu
 historiaksi.
 
+## 0.9.1 – 2026-11-11
+
+- Ei näkyvää muutosta: hintasuunnan nuoli on nyt sama koodi kuin
+  [vartit.fi](https://vartit.fi):n kellon keskellä, joten ne pysyvät samanlaisina.
+
+*No visible change: the trend arrow now shares its code with the one in the
+centre of vartit.fi's clock, so the two stay identical.*
+
 ## 0.9.0 – 2026-11-11
 
 - **Nuoli kuin pala hintakäyrää:** kellon keskellä oleva nuoli osoittaa nyt
