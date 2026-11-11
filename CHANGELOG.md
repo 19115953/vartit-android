@@ -3,6 +3,20 @@
 Vain uusimmat versiot julkaistaan tässä repossa; vanhemmat on listattu
 historiaksi.
 
+## 0.10.0 – 2026-11-11
+
+- **Nuolen kaksi lukemaa erotettiin:** poikkiviivat kertovat edelleen
+  muutoksen määrän sentteinä (2, 10, 30 snt), mutta kallistus kertoo nyt,
+  kuinka suuri muutos on suhteessa nykyiseen hintaan (alle 10 %, 10–25 %,
+  25–50 %, yli 50 %). +5 snt viidestä sentistä on jyrkkä, +5 snt
+  neljästäkymmenestä loiva.
+- Korjaus: kellotaulun lopussa nuoli laski keskiarvon liian harvasta
+  vartista ja saattoi kadota kokonaan.
+
+*The arrow's two readings are now separate: the cross-ticks still give the
+amount in cents, the tilt now the change relative to the current price. Fix:
+near the end of the dial the arrow averaged too few quarters and could vanish.*
+
 ## 0.9.1 – 2026-11-11
 
 - Ei näkyvää muutosta: hintasuunnan nuoli on nyt sama koodi kuin

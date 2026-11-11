@@ -43,18 +43,27 @@ Widgetin kokoa voi muuttaa: paina sitä pitkään ja vedä reunoista.
 - **Korkea** (selvästi korkeampi kuin leveä): kellon yläpuolelle tulee rivi,
   jossa nykyinen vartti (*Nyt*) ja kolme seuraavaa varttia isolla. Kellon
   keskellä on nuoli, joka on kuin pala hintakäyrää: se osoittaa aina oikealle
-  (aika kulkee vasemmalta oikealle) ja kallistuu ylös, jos hinta nousee
-  seuraavan tunnin aikana nykyiseen verrattuna, tai alas, jos se laskee.
-  Mitä suurempi muutos, sitä jyrkempi kallistus ja sitä useampi poikkiviiva
-  nuolen hännässä. Pallon väri on seuraavan tunnin keskihinnan väri.
+  (aika kulkee vasemmalta oikealle) ja kallistuu ylös, jos seuraavan tunnin
+  keskihinta on nykyistä korkeampi, tai alas, jos matalampi. Pallon väri on
+  seuraavan tunnin keskihinnan väri. Nuolessa on kaksi eri lukemaa:
 
-  | Merkki | Seuraavan tunnin keskihinta vs. nyt |
+  | Poikkiviivat = muutoksen **määrä** sentteinä | |
   |---|---|
-  | vaakasuora → | suunnilleen sama (alle 0,5 snt muutos) |
-  | loiva nuoli ylös / alas | nousee / laskee alle 2 snt |
-  | + 1 poikkiviiva | 2–10 snt |
-  | + 2 poikkiviivaa | 10–30 snt |
-  | + 3 poikkiviivaa | 30 snt tai enemmän |
+  | ei viivoja | alle 2 snt |
+  | 1 viiva | 2–10 snt |
+  | 2 viivaa | 10–30 snt |
+  | 3 viivaa | 30 snt tai enemmän |
+
+  | Kallistus = muutos **suhteessa** nykyhintaan | |
+  |---|---|
+  | vaakasuora → | suunnilleen sama (alle 0,5 snt) |
+  | 15° | alle 10 % |
+  | 30° | 10–25 % |
+  | 45° | 25–50 % |
+  | 60° | 50 % tai enemmän |
+
+  Esimerkiksi 5 → 10 snt ja 40 → 45 snt ovat molemmat +5 snt (1 viiva), mutta
+  ensimmäinen on +100 % (jyrkkä), jälkimmäinen +12 % (loiva).
 - **Matala tai neliö**: pelkkä kello, nykyinen hinta kellon keskellä.
 
 ### Kellon lukeminen
@@ -134,10 +143,11 @@ in a separate private repository.
   and next three quarter-hour prices above the clock, and an arrow in the
   clock's centre like a piece of the price curve: it always points right
   (time) and tilts up or down with where the next hour's average price goes
-  compared with now, steeper and with more cross-ticks the bigger the change.
-  Level = about the same (under 0.5 c), a gentle tilt = under 2 c, then one
-  cross-tick per step: 2–10 c, 10–30 c, 30 c or more. The disc has the next
-  hour's average price colour. Otherwise the current price sits in the
+  compared with now. Two readings: the cross-ticks give the amount in cents
+  (none under 2 c, then one each at 2, 10 and 30 c); the tilt gives the change
+  relative to the current price (15° under 10 %, 30° to 25 %, 45° to 50 %, 60°
+  beyond; level = about the same). 5 → 10 c and 40 → 45 c are both one tick,
+  but steep vs. gentle. The disc has the next hour's average price colour. Otherwise the current price sits in the
   clock's centre.
 - **Colours:** blue = negative, green = cheap (0–2 c), orange = medium
   (2–10 c), red = expensive (10 c or more). Hatching = not yet published.
