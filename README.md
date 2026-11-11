@@ -12,7 +12,9 @@ lähdekoodi on erillisessä yksityisessä repossa.
 
 | Korkea widget | Matala widget |
 |---|---|
-| <img src="screenshots/tall.png" width="260" alt="Korkea widget: hinnat kellon yläpuolella"> | <img src="screenshots/square.png" width="260" alt="Matala widget: nykyinen hinta kellon keskellä"> |
+| <img src="screenshots/tall.png" width="300" alt="Korkea widget: nykyinen ja kolme seuraavaa varttia kellon yläpuolella, siksak-nuoli kellon keskellä"> | <img src="screenshots/square.png" width="300" alt="Matala widget: nykyinen hinta kellon keskellä"> |
+
+*Kuvakaappaukset versiosta 0.11.0, 11.11.2026 klo 20.25.*
 
 ## Lataus
 
@@ -41,22 +43,40 @@ Vaatii Android 8.0:n tai uudemman.
 Widgetin kokoa voi muuttaa: paina sitä pitkään ja vedä reunoista.
 
 - **Korkea** (selvästi korkeampi kuin leveä): kellon yläpuolelle tulee rivi,
-  jossa nykyinen vartti (*Nyt*) ja kolme seuraavaa varttia isolla. Kellon
-  keskellä on siksak-nuoli, joka näyttää seuraavan tunnin hintapolun:
-  jokainen osa on yksi vartti (nyt → 1. → 2. → 3. → 4. vartti), ja se nousee
-  tai laskee sen mukaan, onko vartti kalliimpi vai halvempi kuin edellinen.
-  Mitä suurempi muutos suhteessa hintaan, sitä jyrkempi osa (alle 10 %, 10–25 %,
-  25–50 %, yli 50 %). Vaakasuora osa = suunnilleen sama hinta (alle 0,5 snt).
-  Nuolenkärki on tunnin lopussa. Pallon väri on seuraavan tunnin keskihinnan
-  väri. Esimerkiksi hinnat 18,54 → 16,67 → 26,23 → 22,99 → 18,82 piirtyvät:
-  alas, jyrkästi ylös, alas, alas.
+  jossa nykyinen vartti (*Nyt*) ja kolme seuraavaa varttia isolla, ja kellon
+  keskellä on seuraavan tunnin hintapolku siksak-nuolena (ks. alla).
 - **Matala tai neliö**: pelkkä kello, nykyinen hinta kellon keskellä.
+
+### Siksak-nuoli: seuraavan tunnin hintapolku
+
+Korkean widgetin keskellä oleva nuoli on kuin pieni pala hintakäyrää. Se
+kulkee vasemmalta oikealle kuin aika, ja jokainen sen osa on yksi vartti:
+nyt → 1. → 2. → 3. → 4. vartti, eli seuraava tunti. Nuolenkärki on tunnin
+lopussa.
+
+- Osa **nousee**, jos vartti on kalliimpi kuin edellinen, ja **laskee**, jos
+  halvempi. **Vaakasuora** osa = suunnilleen sama hinta (alle 0,5 snt muutos).
+- Mitä suurempi muutos **suhteessa hintaan**, sitä jyrkempi osa: alle 10 %,
+  10–25 %, 25–50 % tai yli 50 % (15°, 30°, 45°, 60°). Siksi 3 → 6 snt ja
+  30 → 60 snt piirtyvät yhtä jyrkkinä – rahamäärän näet hintariviltä.
+- Pallon väri on seuraavan tunnin keskihinnan väri.
+
+<img src="screenshots/zigzag.png" width="560" alt="Neljä esimerkkiä 11.–12.11.2026: hinnat pylväinä ja niistä piirtyvä siksak-nuoli">
+
+Ylin esimerkki: klo 21.30 hinta ensin laskee (16,67), sitten hyppää (26,23)
+ja laskee taas – nuoli kulkee *alas, ylös, alas, alas*.
 
 ### Kellon lukeminen
 
 - Kello kattaa seuraavat 12 tuntia, ja musta osoitin näyttää nykyhetken.
 - Jokainen palkki on yksi vartti: mitä pidempi palkki, sitä kalliimpi.
-  Katkoviivarenkaat ovat 0, 5, 10, 15 ja 20 snt/kWh.
+  Katkoviivarenkaat ovat 0, 5, 10, 15 ja 20 snt/kWh. Korkeiden palkkien
+  kohdalla renkaat näkyvät palkkien välisissä raoissa pieninä tummina
+  viivoina.
+- Vähintään 30 snt/kWh:n palkkiin on kirjoitettu hinta kokonaisina sentteinä
+  (paitsi nykyiseen varttiin, jonka päällä osoitin on – sen hinta näkyy
+  hintarivissä tai kellon keskellä). Hyvin kalliina päivinä kello pienenee
+  hieman, jotta pisimmätkin palkit mahtuvat kokonaan näkyviin.
 - Värit: **sininen** = negatiivinen hinta (alle 0), **vihreä** = halpa
   (0–2 snt), **oranssi** = keskihintainen (2–10 snt), **punainen** = kallis
   (vähintään 10 snt).
@@ -127,12 +147,19 @@ in a separate private repository.
   **Add to home screen**.
 - **Sizes:** resize the widget taller than wide to get a row with the current
   and next three quarter-hour prices above the clock, and a zigzag arrow in
-  the clock's centre showing the coming hour's price path: one leg per
-  quarter, each rising or falling against the previous one, steeper for a
-  bigger change relative to the price (under 10 %, 10–25 %, 25–50 %, more);
-  level = about the same. The arrowhead is the end of the hour, and the disc
-  has the next hour's average price colour. Otherwise the current price sits in the
-  clock's centre.
+  the centre (below). Otherwise the current price sits in the clock's centre.
+- **Zigzag arrow:** the coming hour's price path, read left to right like time:
+  one leg per quarter (now → 1st → … → 4th), rising or falling against the
+  previous quarter, steeper for a bigger change relative to the price (under
+  10 %, 10–25 %, 25–50 %, more: 15/30/45/60°); level = about the same (under
+  0.5 c). The arrowhead is the end of the hour; the disc has the next hour's
+  average price colour. See the picture above: at 21.30 on 11.11. it runs
+  *down, up, down, down*.
+- **Reading the clock:** each bar is a quarter-hour, longer = pricier; dashed
+  rings at 0/5/10/15/20 c, shown as small dark marks in the gaps between tall
+  bars. Bars of 30 c or more have their price printed on them in whole cents
+  (except the current quarter, under the hand). On very expensive days the
+  clock shrinks a little so the longest bars fit.
 - **Colours:** blue = negative, green = cheap (0–2 c), orange = medium
   (2–10 c), red = expensive (10 c or more). Hatching = not yet published.
 - **Not updating?** App → *Open app info* → *Battery* → *Unrestricted*.
