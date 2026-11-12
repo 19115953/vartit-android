@@ -3,6 +3,17 @@
 Vain uusimmat versiot julkaistaan tässä repossa; vanhemmat on listattu
 historiaksi.
 
+## 0.12.0 – 2026-11-12
+
+- **Keinohorisontti:** siksak-nuoli on kallistettu sen mukaan, mihin hinta on
+  tunnin lopussa menossa, ja pallon tausta on jaettu samaan kulmaan vaaleaan
+  ja tummaan puoliskoon kuin lentokoneen keinohorisontti. Aiemmin nuolen pää
+  saattoi jäädä alemmas kuin alku, vaikka hinta tunnin lopussa oli korkeampi.
+
+*Artificial horizon: the zigzag is tilted with where the price ends up at the end
+of the hour, and the disc behind is split at the same angle into a lighter and a
+darker half, like an aircraft's attitude indicator.*
+
 ## 0.11.0 – 2026-11-11
 
 - **Siksak-nuoli:** kellon keskellä on nyt seuraavan tunnin hintapolku –

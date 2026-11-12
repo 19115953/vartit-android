@@ -14,7 +14,7 @@ lähdekoodi on erillisessä yksityisessä repossa.
 |---|---|
 | <img src="screenshots/tall.png" width="300" alt="Korkea widget: nykyinen ja kolme seuraavaa varttia kellon yläpuolella, siksak-nuoli kellon keskellä"> | <img src="screenshots/square.png" width="300" alt="Matala widget: nykyinen hinta kellon keskellä"> |
 
-*Kuvakaappaukset versiosta 0.11.0, 11.11.2026 klo 20.25.*
+*Kuvakaappaukset: korkea versiosta 0.12.0 (12.11.2026 klo 18.47), matala versiosta 0.11.0.*
 
 ## Lataus
 
@@ -59,12 +59,19 @@ lopussa.
 - Mitä suurempi muutos **suhteessa hintaan**, sitä jyrkempi osa: alle 10 %,
   10–25 %, 25–50 % tai yli 50 % (15°, 30°, 45°, 60°). Siksi 3 → 6 snt ja
   30 → 60 snt piirtyvät yhtä jyrkkinä – rahamäärän näet hintariviltä.
+- **Keinohorisontti:** koko siksak on kallistettu sen mukaan, mihin hinta on
+  tunnin lopussa menossa nykyiseen verrattuna, ja pallon tausta on jaettu
+  samaan kulmaan vaaleaan "taivaaseen" ja tummaan "maahan" – kuin lentokoneen
+  keinohorisontti. Vaakasuora horisontti = tunnin lopussa suunnilleen sama
+  hinta; kallistus 15°, 25°, 35° tai 45° sen mukaan, onko muutos alle 10 %,
+  10–25 %, 25–50 % vai enemmän.
 - Pallon väri on seuraavan tunnin keskihinnan väri.
 
 <img src="screenshots/zigzag.png" width="560" alt="Neljä esimerkkiä 11.–12.11.2026: hinnat pylväinä ja niistä piirtyvä siksak-nuoli">
 
 Ylin esimerkki: klo 21.30 hinta ensin laskee (16,67), sitten hyppää (26,23)
-ja laskee taas – nuoli kulkee *alas, ylös, alas, alas*.
+ja laskee taas – nuoli kulkee *alas, ylös, alas, alas*. Tunnin lopussa hinta
+(18,82) on melkein sama kuin nyt (18,54), joten horisontti on vaakasuora.
 
 ### Kellon lukeminen
 
@@ -153,8 +160,11 @@ in a separate private repository.
   previous quarter, steeper for a bigger change relative to the price (under
   10 %, 10–25 %, 25–50 %, more: 15/30/45/60°); level = about the same (under
   0.5 c). The arrowhead is the end of the hour; the disc has the next hour's
-  average price colour. See the picture above: at 21.30 on 11.11. it runs
-  *down, up, down, down*.
+  average price colour. The whole zigzag, and the disc's lighter "sky" and
+  darker "ground" behind it, tilt with where the price ends up at the end of
+  the hour, like an aircraft's artificial horizon (level, or 15/25/35/45° for
+  under 10 / 25 / 50 / over 50 %). See the picture above: at 21.30 on 11.11.
+  it runs *down, up, down, down* on a level horizon.
 - **Reading the clock:** each bar is a quarter-hour, longer = pricier; dashed
   rings at 0/5/10/15/20 c, shown as small dark marks in the gaps between tall
   bars. Bars of 30 c or more have their price printed on them in whole cents
