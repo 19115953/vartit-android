@@ -3,6 +3,18 @@
 Vain uusimmat versiot julkaistaan tässä repossa; vanhemmat on listattu
 historiaksi.
 
+## 0.12.1 – 2026-11-12
+
+- Keinohorisontin kallistus näkyy nyt aina täysimääräisenä, myös hyvin
+  jyrkissä nousuissa (esim. 15.9. yöllä 11 → 50 snt tunnissa piirtyi aiemmin
+  lähes vaakasuoraksi).
+- Halvoilla tunneilla sentin parin heilahdus ei enää kallista nuolta jyrkästi:
+  muutosta verrataan vähintään 5 senttiin.
+
+*The artificial horizon's tilt is now always drawn in full, also in very steep
+rises; near zero, a cent or two no longer tilts the arrow steeply (changes are
+measured against at least 5 c).*
+
 ## 0.12.0 – 2026-11-12
 
 - **Keinohorisontti:** siksak-nuoli on kallistettu sen mukaan, mihin hinta on

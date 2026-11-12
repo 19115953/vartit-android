@@ -57,8 +57,10 @@ lopussa.
 - Osa **nousee**, jos vartti on kalliimpi kuin edellinen, ja **laskee**, jos
   halvempi. **Vaakasuora** osa = suunnilleen sama hinta (alle 0,5 snt muutos).
 - Mitä suurempi muutos **suhteessa hintaan**, sitä jyrkempi osa: alle 10 %,
-  10–25 %, 25–50 % tai yli 50 % (15°, 30°, 45°, 60°). Siksi 3 → 6 snt ja
+  10–25 %, 25–50 % tai yli 50 % (15°, 30°, 45°, 60°). Siksi 6 → 12 snt ja
   30 → 60 snt piirtyvät yhtä jyrkkinä – rahamäärän näet hintariviltä.
+  Halvoilla tunneilla muutosta verrataan kuitenkin vähintään 5 senttiin, jotta
+  sentin parin heilahdus lähellä nollaa ei näytä jyrkältä.
 - **Keinohorisontti:** koko siksak on kallistettu sen mukaan, mihin hinta on
   tunnin lopussa menossa nykyiseen verrattuna, ja pallon tausta on jaettu
   samaan kulmaan vaaleaan "taivaaseen" ja tummaan "maahan" – kuin lentokoneen
@@ -158,8 +160,9 @@ in a separate private repository.
 - **Zigzag arrow:** the coming hour's price path, read left to right like time:
   one leg per quarter (now → 1st → … → 4th), rising or falling against the
   previous quarter, steeper for a bigger change relative to the price (under
-  10 %, 10–25 %, 25–50 %, more: 15/30/45/60°); level = about the same (under
-  0.5 c). The arrowhead is the end of the hour; the disc has the next hour's
+  10 %, 10–25 %, 25–50 %, more: 15/30/45/60°; cheap hours are measured against
+  at least 5 c, so a cent's wobble near zero stays gentle); level = about the
+  same (under 0.5 c). The arrowhead is the end of the hour; the disc has the next hour's
   average price colour. The whole zigzag, and the disc's lighter "sky" and
   darker "ground" behind it, tilt with where the price ends up at the end of
   the hour, like an aircraft's artificial horizon (level, or 15/25/35/45° for
