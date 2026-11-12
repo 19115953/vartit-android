@@ -14,7 +14,7 @@ lähdekoodi on erillisessä yksityisessä repossa.
 |---|---|
 | <img src="screenshots/tall.png" width="300" alt="Korkea widget: nykyinen ja kolme seuraavaa varttia kellon yläpuolella, siksak-nuoli kellon keskellä"> | <img src="screenshots/square.png" width="300" alt="Matala widget: nykyinen hinta kellon keskellä"> |
 
-*Kuvakaappaukset versiosta 0.12.0, 12.11.2026 klo 18.59.*
+*Kuvakaappaukset versiosta 0.12.1, 12.11.2026 klo 19.41.*
 
 ## Lataus
 
