@@ -77,7 +77,8 @@ ja laskee taas – nuoli kulkee *alas, ylös, alas, alas*. Tunnin lopussa hinta
 
 ### Kellon lukeminen
 
-- Kello kattaa seuraavat 12 tuntia, ja musta osoitin näyttää nykyhetken.
+- Kello kattaa seuraavat 12 tuntia, ja reunan nuolenkärki näyttää nykyhetken – se on täytetty nykyisen vartin
+  hintavärillä.
 - Jokainen palkki on yksi vartti: mitä pidempi palkki, sitä kalliimpi.
   Katkoviivarenkaat ovat 0, 5, 10, 15 ja 20 snt/kWh. Korkeiden palkkien
   kohdalla renkaat näkyvät palkkien välisissä raoissa pieninä tummina
