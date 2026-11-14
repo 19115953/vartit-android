@@ -3,6 +3,14 @@
 Vain uusimmat versiot julkaistaan tässä repossa; vanhemmat on listattu
 historiaksi.
 
+## 0.12.2 – 2026-11-14
+
+- Kellonajan osoitin on nyt pelkkä nuolenkärki kellotaulun reunalla; viiva
+  keskeltä reunaan on poistettu turhana.
+
+*The current-time hand is now just the arrowhead at the clock's rim; the line
+from the centre to the rim is gone.*
+
 ## 0.12.1 – 2026-11-12
 
 - Keinohorisontin kallistus näkyy nyt aina täysimääräisenä, myös hyvin
