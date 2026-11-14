@@ -167,8 +167,7 @@ in a separate private repository.
   asked. Google Play Protect will likely say it hasn't seen the app before
   (it's not in the Play Store): tap *More details* → *Install without
   scanning* (see the screenshots in the Finnish *Asennus* section). Then open
-  the app and tap
-  **Add to home screen**.
+  the app and tap **Add to home screen**.
 - **Sizes:** resize the widget taller than wide to get a row with the current
   and next three quarter-hour prices above the clock, and a zigzag arrow in
   the centre (below). Otherwise the current price sits in the clock's centre.
