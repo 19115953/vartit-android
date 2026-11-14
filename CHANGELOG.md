@@ -3,6 +3,17 @@
 Vain uusimmat versiot julkaistaan tässä repossa; vanhemmat on listattu
 historiaksi.
 
+## 0.13.0 – 2026-11-14
+
+- Kellonajan nuolenkärki on nyt täytetty nykyisen vartin hintavärillä
+  (vihreä, oranssi, punainen tai sininen), joten se erottuu myös yön
+  tummalta kellotaululta. Vaatii Android 12:n; vanhemmissa nuoli pysyy
+  mustana.
+
+*The current-time arrowhead is now filled with the current quarter's price
+colour, so it stands out on the dark night face too (Android 12+; older
+versions keep it black).*
+
 ## 0.12.2 – 2026-11-14
 
 - Kellonajan osoitin on nyt pelkkä nuolenkärki kellotaulun reunalla; viiva
