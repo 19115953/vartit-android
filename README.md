@@ -14,7 +14,7 @@ lähdekoodi on erillisessä yksityisessä repossa.
 |---|---|
 | <img src="screenshots/tall.png" width="300" alt="Korkea widget: nykyinen ja kolme seuraavaa varttia kellon yläpuolella, siksak-nuoli kellon keskellä"> | <img src="screenshots/square.png" width="300" alt="Matala widget: nykyinen hinta kellon keskellä"> |
 
-*Kuvakaappaukset versiosta 0.12.1, 12.11.2026 klo 19.41.*
+*Kuvakaappaukset versiosta 0.13.0, 14.11.2026 klo 19.58.*
 
 ## Lataus
 
@@ -33,8 +33,19 @@ Vaatii Android 8.0:n tai uudemman.
 3. Puhelin kysyy lupaa asentaa sovelluksia tästä lähteestä (selain tai
    tiedostonhallinta) – salli se ja palaa takaisin. Tämä on normaalia, kun
    sovellus ei tule Play-kaupasta.
-4. Jos Google Play Protect varoittaa tuntemattomasta sovelluksesta, valitse
-   *Lisätietoja* → *Asenna silti*.
+4. Google Play Protect varoittaa todennäköisesti, ettei se tunne sovellusta
+   (*Sovelluksen skannausta suositellaan*). Se on odotettavaa, koska sovellus
+   ei ole Play-kaupassa. Paina **Lisätietoja**, jolloin esiin tulee
+   **Asenna ilman skannaamista** – paina sitä. (Myös *Skannaa sovellus*
+   käy: sovellus lähetetään Googlelle tarkistettavaksi, mikä voi kestää
+   hetken.)
+
+   | 1. Paina *Lisätietoja* | 2. Paina *Asenna ilman skannaamista* |
+   |---|---|
+   | <img src="screenshots/asennus-1-lisatietoja.jpg" width="260" alt="Play Protect -ikkuna: Sovelluksen skannausta suositellaan, Lisätietoja-linkki korostettuna"> | <img src="screenshots/asennus-2-asenna-ilman-skannaamista.jpg" width="260" alt="Play Protect -ikkuna avattuna: Asenna ilman skannaamista -painike korostettuna"> |
+
+   *Kuvat Samsung-puhelimesta (One UI); muissa puhelimissa tekstit voivat
+   olla hieman erilaiset.*
 5. Avaa **vartit**-sovellus ja paina **Lisää aloitusnäytölle**. (Tai: paina
    aloitusnäyttöä pitkään → *Widgetit* → *vartit* → *Hintakello*.)
 
@@ -153,7 +164,10 @@ in a separate private repository.
 - **Download (always the latest):** <https://github.com/19115953/vartit-android/releases/latest/download/vartit.apk>
 - **Requires** Android 8.0+.
 - **Install:** open the APK, allow installs from your browser/file manager when
-  asked (and *Install anyway* if Play Protect warns), then open the app and tap
+  asked. Google Play Protect will likely say it hasn't seen the app before
+  (it's not in the Play Store): tap *More details* → *Install without
+  scanning* (see the screenshots in the Finnish *Asennus* section). Then open
+  the app and tap
   **Add to home screen**.
 - **Sizes:** resize the widget taller than wide to get a row with the current
   and next three quarter-hour prices above the clock, and a zigzag arrow in
