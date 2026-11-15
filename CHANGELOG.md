@@ -3,6 +3,21 @@
 Vain uusimmat versiot julkaistaan tässä repossa; vanhemmat on listattu
 historiaksi.
 
+## 0.13.1 – 2026-11-15
+
+- Huomisen hinnat tulevat nyt varmemmin: kello hakee hinnat myös
+  vartin välein tapahtuvan päivityksen yhteydessä, kun niitä vielä puuttuu,
+  eikä vain erillisellä taustahaulla, jonka puhelin saattoi jättää
+  ajamatta koko iltapäiväksi.
+- Sovelluksen näkymä kertoo kellon alla, milloin hinnat viimeksi
+  haettiin, ja jos viimeisin haku epäonnistui, myös virheen.
+
+*Tomorrow's prices arrive more reliably: the clock now also fetches prices
+on its quarter-hour redraw while they're still missing, not only through the
+separate background job the phone could skip for a whole afternoon. The app
+screen shows under the clock when prices were last fetched, and the error if
+the latest attempt failed.*
+
 ## 0.13.0 – 2026-11-14
 
 - Kellonajan nuolenkärki on nyt täytetty nykyisen vartin hintavärillä
