@@ -3,6 +3,16 @@
 Vain uusimmat versiot julkaistaan tässä repossa; vanhemmat on listattu
 historiaksi.
 
+## 0.14.0 – 2026-11-27
+
+- Kalliina päivänä, kun pitkät palkit peittävät tuntinumerot, kunkin
+  peittyneen tunnin kohdalla on valkoinen pyöreäpäinen viiva – kuin kellossa
+  ilman numeroita. Tavallisena päivänä kello on ennallaan.
+
+*On an expensive day, when long bars cover the hour numbers, each covered hour
+gets a white rounded mark, like a watch without numbers. On a normal day the
+clock is unchanged.*
+
 ## 0.13.1 – 2026-11-15
 
 - Huomisen hinnat tulevat nyt varmemmin: kello hakee hinnat myös
