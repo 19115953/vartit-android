@@ -3,6 +3,16 @@
 Vain uusimmat versiot julkaistaan tässä repossa; vanhemmat on listattu
 historiaksi.
 
+## 0.15.0 – 2026-11-27
+
+- Hinta-asteikon pääympyrät 10 ja 20 snt/kWh ovat nyt yhtenäisiä viivoja
+  (0, 5 ja 15 pysyvät katkoviivoina), ne näkyvät himmeänä varjona myös
+  palkkien poikki ja jatkuvat viivoitetun alueen läpi.
+
+*The price scale's main rings at 10 and 20 c/kWh are now solid (0, 5 and 15
+stay dotted), show as a soft shade across the bars and continue through the
+striped no-data wedge.*
+
 ## 0.14.0 – 2026-11-27
 
 - Kalliina päivänä, kun pitkät palkit peittävät tuntinumerot, kunkin
