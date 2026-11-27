@@ -12,9 +12,22 @@ lähdekoodi on erillisessä yksityisessä repossa.
 
 | Korkea widget | Matala widget |
 |---|---|
-| <img src="screenshots/tall.png" width="300" alt="Korkea widget: nykyinen ja kolme seuraavaa varttia kellon yläpuolella, siksak-nuoli kellon keskellä"> | <img src="screenshots/square.png" width="300" alt="Matala widget: nykyinen hinta kellon keskellä"> |
+| <img src="screenshots/tall.png" width="300" alt="Korkea widget tavallisena päivänä: nykyinen ja kolme seuraavaa varttia kellon yläpuolella, siksak-nuoli kellon keskellä, tuntinumerot näkyvissä"> | <img src="screenshots/square.png" width="300" alt="Matala widget tavallisena päivänä: nykyinen hinta kellon keskellä"> |
 
-*Kuvakaappaukset versiosta 0.13.0, 14.11.2026 klo 19.58.*
+*Tavallinen päivä: lauantai 28.11.2026 klo 9.20 (hinnat 7–19 snt).*
+
+**Hyvin kallis päivä** – torstai 26.11.2026, jolloin lähes kaikki vartit
+olivat yli 30 snt:
+
+| Korkea, klo 7.30 | Matala, klo 13.00 |
+|---|---|
+| <img src="screenshots/kallis-korkea.png" width="300" alt="Korkea widget kalliina päivänä: pitkät punaiset palkit hintoineen, tuntinumeroiden tilalla valkoiset tuntimerkit, 10 ja 20 sentin päärenkaat näkyvät palkkien yli"> | <img src="screenshots/kallis-matala.png" width="300" alt="Matala widget kalliina päivänä: tuntimerkit numeroiden tilalla, kuu klo 12 kohdalla, perjantain hinnat vielä julkaisematta"> |
+
+*Palkit peittävät tuntinumerot, joten niiden paikalla on valkoiset
+tuntimerkit. 10 ja 20 sentin päärenkaat erottuvat palkkien yli. Klo 13.00
+perjantain hintoja ei ollut vielä julkaistu (viivoitettu kiila).*
+
+*Kuvakaappaukset versiosta 0.15.0 (Android-emulaattori).*
 
 ## Lataus
 
@@ -91,9 +104,15 @@ ja laskee taas – nuoli kulkee *alas, ylös, alas, alas*. Tunnin lopussa hinta
 - Kello kattaa seuraavat 12 tuntia, ja reunan nuolenkärki näyttää
   nykyhetken – se on täytetty nykyisen vartin hintavärillä.
 - Jokainen palkki on yksi vartti: mitä pidempi palkki, sitä kalliimpi.
-  Katkoviivarenkaat ovat 0, 5, 10, 15 ja 20 snt/kWh. Korkeiden palkkien
-  kohdalla renkaat näkyvät palkkien välisissä raoissa pieninä tummina
-  viivoina.
+  Renkaat ovat 0, 5, 10, 15 ja 20 snt/kWh. **10 ja 20 sentin päärenkaat**
+  ovat yhtenäisiä viivoja, jotka näkyvät tummana varjona myös pitkien
+  palkkien yli ja jatkuvat viivoitetussa kiilassa – niistä näkee
+  yhdellä silmäyksellä, mitkä vartit ylittävät 10 tai 20 senttiä. Muut
+  renkaat ovat katkoviivoja.
+- **Tuntimerkit:** kun pitkät palkit peittävät tuntinumeron (noin 29 snt
+  ja yli), numeron tilalle tulee valkoinen pyöreäpäinen merkki – kuin
+  numeroton kellotaulu. Tunnit päätellään merkkien paikoista (12 ylhäällä,
+  3 oikealla jne.). Tavallisena päivänä numerot näkyvät kuten ennenkin.
 - Vähintään 30 snt/kWh:n palkkiin on kirjoitettu hinta kokonaisina sentteinä
   (paitsi nykyiseen varttiin, jonka päällä osoitin on – sen hinta näkyy
   hintarivissä tai kellon keskellä). Hyvin kalliina päivinä kello pienenee
@@ -182,9 +201,12 @@ in a separate private repository.
   the hour, like an aircraft's artificial horizon (level, or 15/25/35/45° for
   under 10 / 25 / 50 / over 50 %). See the picture above: at 21.30 on 11.11.
   it runs *down, up, down, down* on a level horizon.
-- **Reading the clock:** each bar is a quarter-hour, longer = pricier; dashed
-  rings at 0/5/10/15/20 c, shown as small dark marks in the gaps between tall
-  bars. Bars of 30 c or more have their price printed on them in whole cents
+- **Reading the clock:** each bar is a quarter-hour, longer = pricier; rings
+  at 0/5/10/15/20 c. The 10 and 20 c main rings are solid and show as a dark
+  shade across long bars and as a line in the hatched wedge; the others are
+  dashed. When long bars cover an hour number (about 29 c and up), a white
+  rounded hour mark replaces it, like a watch dial without numbers. See the
+  very expensive day (26.11.2026) screenshots at the top. Bars of 30 c or more have their price printed on them in whole cents
   (except the current quarter, under the hand). On very expensive days the
   clock shrinks a little so the longest bars fit.
 - **Colours:** blue = negative, green = cheap (0–2 c), orange = medium
